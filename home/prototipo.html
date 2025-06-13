@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cards estilo Adrenaline</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+    }
+
+    #Containe-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Card destaque ocupa toda a largura */
+    .destaque {
+      grid-column: 1 / -1;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') no-repeat center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    }
+
+    .destaque h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+
+    .destaque p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-shadow: 0 0 8px rgba(0,0,0,0.7);
+    }
+
+    /* Cards menores abaixo */
+    #Containe-cards .card:not(.destaque) {
+      background: #012;
+      padding: 20px;
+      height: 280px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    /* Imagens dentro dos cards */
+    .cards-img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    /* Grid para 3 colunas em telas médias para cima */
+    @media (min-width: 768px) {
+      #Containe-cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="Containe-cards">
+    <div class="card destaque">
+      <h2>Destaque Principal</h2>
+      <p>Uma chamada bem impactante para o conteúdo principal, com imagem de fundo e texto sobreposto.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80" alt="Card 2" class="cards-
