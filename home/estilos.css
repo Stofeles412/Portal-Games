@@ -8,7 +8,7 @@ body{
 header{
     display: flex;
     height: 100px;
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(0, 0, 0);
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.399);
     margin-bottom: 20%;
     position: relative;
@@ -19,7 +19,8 @@ header{
 nav{
     display: inline;
     text-align: center;
-    border-bottom: solid 2px blueviolet;
+    border-bottom: solid 2px #8A00FF;
+  
    
 }
 #itens-ul{
@@ -27,7 +28,7 @@ nav{
     display: flex;
 }
 .ul-li,a{
-   color: rgb(188, 188, 188) ;
+    color: #8A00FF;
    font-weight: bold;
     text-decoration: none;
     list-style-type: none;
@@ -40,13 +41,13 @@ nav{
     background-color: rgb(255, 255, 255);
 }
 div{
-    background-color: rgb(184, 73, 45);
-    border: solid 2px purple;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px #8A00FF;
     margin: auto;
     color: rgb(160, 6, 216);
     padding: 50px;
-    width: 60%;
-    height: 500px;
+    width: 95%;
+    height: 300px;
     line-height: 50px;
     gap: 10px;
      transition: transform 0.3s ease;
@@ -61,6 +62,7 @@ div:hover{
    transform: scale(1.05);
 }
 .card-destaque{
+    height: 415px;
    display: grid;
 }
 
@@ -92,4 +94,51 @@ div:hover{
     background-position: center center;
    background-size: cover;
 }
+.card-5{
+    background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+   background-size: cover;
+    
+
+}
+.card-6{
+    
+    background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+   background-size: cover;
+}
+.card-7{
+    background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+   background-size: cover;
+}
+.card-8{
+    background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+   background-size: cover;
+
+}
+.card-9{
+    background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+   background-size: cover;
+}
+.card-10{
+    background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+   background-size: cover;
+}
+.card-11{
+    background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+   background-size: cover;
+}
+
 
