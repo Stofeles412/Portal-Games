@@ -43,7 +43,6 @@ nav{
 }
 div{
     background-color: rgb(0, 0, 0);
-    border: solid 2px #8A00FF;
     margin: 5px;
     color: rgb(160, 6, 216);
     padding: 40px;
@@ -61,6 +60,7 @@ color: aqua;
 }
 div:hover{
    transform: scale(1.05);
+   border: solid 1px #8A00FF;
 }
 .card-destaque{
     height: 415px;
@@ -85,10 +85,17 @@ div:hover{
 
 }
 .art-txt{
-     background-color: rgba(22, 21, 22, 0.461);
-     color: rgb(7, 219, 64);
-     position: relative;
-     top:  45%;
+   border-left: solid 1px black;
+    border-bottom: solid 1px black ;
+     background-color: rgba(21, 187, 29, 0);
+     width: 100%;
+     padding: 10px;
+     color: rgb(39, 19, 188);
+    position: relative;
+     top: 230px;
+     right: 40px;
+
+
 
 }
 .card-3{
@@ -96,6 +103,8 @@ div:hover{
     background-repeat: no-repeat;
     background-position: center center;
    background-size: cover;
+  
+   
 }
 .card-4{
     background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
