@@ -37,19 +37,20 @@ nav{
 #Containe-cards{
     width: 100%;
     display: grid;
+    gap: 0px;
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); 
     background-color: rgb(255, 255, 255);
 }
 div{
     background-color: rgb(0, 0, 0);
     border: solid 2px #8A00FF;
-    margin: auto;
+    margin: 5px;
     color: rgb(160, 6, 216);
-    padding: 50px;
-    width: 95%;
-    height: 300px;
+    padding: 40px;
+    width: 80%;
+    height: 200px;
     line-height: 50px;
-    gap: 10px;
+    gap: 0px;
      transition: transform 0.3s ease;
     
     
@@ -80,6 +81,14 @@ div:hover{
     background-repeat: no-repeat;
     background-position: center center;
    background-size: cover;
+   background-color: rgb(31, 111, 181);
+
+}
+.art-txt{
+     background-color: rgba(22, 21, 22, 0.461);
+     color: rgb(7, 219, 64);
+     position: relative;
+     top:  45%;
 
 }
 .card-3{
