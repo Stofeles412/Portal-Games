@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: rgb(255, 255, 255);
+      background-color: rgb(35, 35, 35);
 }
 header{
     display: flex;
@@ -39,7 +39,7 @@ nav{
     display: grid;
     gap: 0px;
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); 
-    background-color: rgb(255, 255, 255);
+     background-color: rgb(35, 35, 35);
 }
 div{
     background-color: rgb(0, 0, 0);
@@ -60,7 +60,7 @@ color: aqua;
 }
 div:hover{
    transform: scale(1.05);
-   border: solid 1px #8A00FF;
+   box-shadow: 1px 3px 3px 1px  rgba(0, 0, 0, 0.403);
 }
 .card-destaque{
     height: 415px;
@@ -68,6 +68,7 @@ div:hover{
 }
 
 .card-1{
+    margin-top: 2%;
     grid-column: 1/-1;
     height: 300px;
     width: 90%;
@@ -85,18 +86,18 @@ div:hover{
 
 }
 .art-txt{
-   border-left: solid 1px black;
-    border-bottom: solid 1px black ;
      background-color: rgba(21, 187, 29, 0);
-     width: 100%;
+     width: 38vw;
      padding: 10px;
-     color: rgb(39, 19, 188);
+     color: rgb(9, 202, 89);
+     background-color: rgb(35, 35, 35);
     position: relative;
-     top: 230px;
+     top: 240px;
      right: 40px;
 
-
-
+}
+.art-txt:hover{
+    text-decoration: underline;
 }
 .card-3{
     background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
@@ -107,12 +108,14 @@ div:hover{
    
 }
 .card-4{
+   margin-top: 15%;
     background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;
    background-size: cover;
 }
 .card-5{
+      margin-top: 15%;
     background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;
@@ -121,13 +124,14 @@ div:hover{
 
 }
 .card-6{
-    
+      margin-top: 50%;
     background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;
    background-size: cover;
 }
 .card-7{
+     margin-top: 50%;
     background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;
