@@ -6,6 +6,7 @@ body{
     background-color: rgb(112, 109, 109);
 }
 nav{
+    width: 100%;
     padding: 100px;
     margin-bottom: -7%;
     background-color: rgb(2, 13, 2);
@@ -64,4 +65,22 @@ iframe{
     list-style-type: none;
     text-decoration: none;
     padding: 50px;
+}
+@media screen and (max-width: 630px){
+.div-imagens{
+    width: 100%;
+}
+
+iframe{
+    left: 3%;
+    margin-top: 15%;
+    width: 90%;
+    height: 200px;
+    margin-bottom: 10%;
+}
+.roda-pe,a{
+    text-align: center;
+    margin-top: 20%;
+    padding: 15px;
+}
 }
