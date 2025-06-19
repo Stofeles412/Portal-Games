@@ -97,7 +97,7 @@ div:hover{
 }
 .art-txt{
      background-color: rgba(21, 187, 29, 0);
-     width: 90vw;
+     width: 30vw;
      padding: 10px;
      color: rgb(9, 202, 89);
      background-color: rgb(35, 35, 35);
@@ -215,9 +215,8 @@ header{
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr, 1fr)); 
      background-color: rgb(35, 35, 35);
 }
-
 div{
-    width: 60%;
+    width: 80%;
     height: 100px;
     line-height: 50px;
      transition: transform 0.3s ease;
@@ -232,13 +231,13 @@ div{
      margin-top: 80%;
 }
 .art-txt-destaque{
-  width: 75vw;
+  width: 80vw;
     bottom: 95%;
 }
 .art-txt{
      background-color: rgba(21, 187, 29, 0);
-     height: 10vh;
-     width: 70vw;
+     height: 5vh;
+     width: 50vw;
      right: 1px;
 
 }
