@@ -203,7 +203,7 @@ header{
     border-radius: 100%;
    
 }
-nav {
+nav{
 
   text-align: center;
   opacity: 0;
@@ -211,9 +211,9 @@ nav {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-nav.abrir {
-  opacity: 1;
-  transform: translateX(0);
+.abrir {
+  opacity: 0;
+  transform: translateX(50%);
 }
 #itens-ul{
      top: 50%;
