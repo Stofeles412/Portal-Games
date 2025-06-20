@@ -15,7 +15,8 @@ header{
     position: relative;
 }
 .logo{
-    border-radius: 100%;
+  
+   
 }
 nav{
     display: inline;
@@ -201,6 +202,18 @@ header{
 .logo{
     border-radius: 100%;
    
+}
+nav {
+
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+nav.abrir {
+  opacity: 1;
+  transform: translateX(0);
 }
 #itens-ul{
      top: 50%;
