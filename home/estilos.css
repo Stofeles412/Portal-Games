@@ -18,6 +18,9 @@ header{
   
    
 }
+#botao-menu{
+    display: none;
+}
 nav{
     display: inline;
     text-align: center;
@@ -214,8 +217,10 @@ nav{
   transform: translateX(100%); 
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
-
-.abrir {
+#botao-menu{
+    display: block;
+}
+.abrir{
   opacity: 1;
   transform: translateX(-110%);
   transform-origin: right;
