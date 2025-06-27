@@ -1,94 +1,200 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cards estilo Adrenaline</title>
-  <style>
-    * {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+CONTEÚDO DO MEU TRABALHO
 
-    body {
-      background-color: #111;
-      color: #fff;
-      padding: 20px;
-    }
+Projeto de Banco de Dados
+Sistema de Vendas de Jogos – Loja Digital
 
-    #Containe-cards {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+Aluno: Fernando do Carmo Stofeles
+Faculdade: Uniasselvi
+Curso: Análise e Desenvolvimento de Sistemas
+Disciplina: Imersão Profissional: Projeto de Banco de Dados (173474)
 
-    /* Card destaque ocupa toda a largura */
-    .destaque {
-      grid-column: 1 / -1;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') no-repeat center/cover;
-      height: 60vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
-    }
+1. Introdução
+O mercado de jogos digitais tem crescido exponencialmente devido à evolução tecnológica e à popularização dos jogos em diversas plataformas. Este projeto visa criar um banco de dados para uma loja digital de venda de jogos, facilitando o gerenciamento das informações de clientes, produtos, pedidos e pagamentos, garantindo eficiência e organização.
 
-    .destaque h2 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      text-shadow: 0 0 10px rgba(0,0,0,0.8);
-    }
+2. Objetivo
+Desenvolver um banco de dados relacional para uma loja digital de jogos, capaz de armazenar, consultar e manipular dados relativos a clientes, jogos, pedidos, pagamentos e entregas, com segurança e desempenho.
 
-    .destaque p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      text-shadow: 0 0 8px rgba(0,0,0,0.7);
-    }
+3. Metodologia
+O desenvolvimento seguiu as etapas: levantamento de requisitos, modelagem conceitual (DER), modelagem lógica, implementação do modelo físico com comandos SQL, e criação de consultas básicas para demonstração. Para o DER foi usado o Draw.io, e para o banco de dados, MySQL.
 
-    /* Cards menores abaixo */
-    #Containe-cards .card:not(.destaque) {
-      background: #012;
-      padding: 20px;
-      height: 280px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      text-align: center;
-    }
+4. Modelagem Conceitual – Diagrama Entidade-Relacionamento (DER)
+Entidades principais:
+Cliente
+Atributos: id_cliente (PK), nome, email, telefone, data_cadastro
 
-    /* Imagens dentro dos cards */
-    .cards-img {
-      width: 100%;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 15px;
-    }
+Jogo
+Atributos: id_jogo (PK), nome, descricao, preco, genero, data_lancamento
 
-    /* Grid para 3 colunas em telas médias para cima */
-    @media (min-width: 768px) {
-      #Containe-cards {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-  </style>
-</head>
-<body>
+Pedido
+Atributos: id_pedido (PK), id_cliente (FK), data_pedido, status
 
-  <div id="Containe-cards">
-    <div class="card destaque">
-      <h2>Destaque Principal</h2>
-      <p>Uma chamada bem impactante para o conteúdo principal, com imagem de fundo e texto sobreposto.</p>
-    </div>
+Item_Pedido
+Atributos: id_item (PK), id_pedido (FK), id_jogo (FK), quantidade, preco_unitario
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=600&q=80" alt="Card 2" class="cards-
+Pagamento
+Atributos: id_pagamento (PK), id_pedido (FK), tipo_pagamento, data_pagamento, valor_pago
+
+Relacionamentos:
+Um Cliente pode fazer vários Pedidos (1:N)
+
+Um Pedido contém vários Itens (1:N)
+
+Cada Item_Pedido refere-se a um Jogo (N:1)
+
+Cada Pedido tem um Pagamento (1:1)
+
+5. Modelo Lógico (Tabelas e Relacionamentos)
+Tabela	Campos	Tipo	Observações
+Cliente	id_cliente (PK)	INT AUTO_INCREMENT	Chave primária
+nome	VARCHAR(100)	
+email	VARCHAR(100)	Único
+telefone	VARCHAR(20)	
+data_cadastro	DATE	
+--------------	--------------------------------	-------------	----------------------------------
+Jogo	id_jogo (PK)	INT AUTO_INCREMENT	Chave primária
+nome	VARCHAR(100)	
+descricao	TEXT	
+preco	DECIMAL(10,2)	
+genero	VARCHAR(50)	
+data_lancamento	DATE	
+--------------	--------------------------------	-------------	----------------------------------
+Pedido	id_pedido (PK)	INT AUTO_INCREMENT	Chave primária
+id_cliente (FK)	INT	Chave estrangeira para Cliente
+data_pedido	DATETIME	
+status	VARCHAR(20)	Ex: 'Pendente', 'Pago', 'Cancelado'
+--------------	--------------------------------	-------------	----------------------------------
+Item_Pedido	id_item (PK)	INT AUTO_INCREMENT	Chave primária
+id_pedido (FK)	INT	Chave estrangeira para Pedido
+id_jogo (FK)	INT	Chave estrangeira para Jogo
+quantidade	INT	
+preco_unitario	DECIMAL(10,2)	Preço do jogo no momento da compra
+--------------	--------------------------------	-------------	----------------------------------
+Pagamento	id_pagamento (PK)	INT AUTO_INCREMENT	Chave primária
+id_pedido (FK)	INT	Chave estrangeira para Pedido
+tipo_pagamento	VARCHAR(50)	Ex: 'Cartão', 'Boleto', 'Pix'
+data_pagamento	DATETIME	
+valor_pago	DECIMAL(10,2)	
+
+6. Modelo Físico – Código SQL (Exemplos)
+CREATE TABLE Cliente (
+    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    telefone VARCHAR(20),
+    data_cadastro DATE NOT NULL
+);
+
+CREATE TABLE Jogo (
+    id_jogo INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    preco DECIMAL(10,2) NOT NULL,
+    genero VARCHAR(50),
+    data_lancamento DATE
+);
+
+CREATE TABLE Pedido (
+    id_pedido INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT NOT NULL,
+    data_pedido DATETIME NOT NULL,
+    status VARCHAR(20) NOT NULL,
+    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
+);
+
+CREATE TABLE Item_Pedido (
+    id_item INT AUTO_INCREMENT PRIMARY KEY,
+    id_pedido INT NOT NULL,
+    id_jogo INT NOT NULL,
+    quantidade INT NOT NULL,
+    preco_unitario DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (id_pedido) REFERENCES Pedido(id_pedido),
+    FOREIGN KEY (id_jogo) REFERENCES Jogo(id_jogo)
+);
+
+CREATE TABLE Pagamento (
+    id_pagamento INT AUTO_INCREMENT PRIMARY KEY,
+    id_pedido INT NOT NULL,
+    tipo_pagamento VARCHAR(50),
+    data_pagamento DATETIME,
+    valor_pago DECIMAL(10,2),
+    FOREIGN KEY (id_pedido) REFERENCES Pedido(id_pedido)
+);
+7. Consultas SQL de exemplo
+Listar todos os jogos disponíveis:
+
+sql
+Copiar
+Editar
+SELECT id_jogo, nome, preco, genero FROM Jogo;
+Consultar pedidos de um cliente:
+
+sql
+Copiar
+Editar
+SELECT p.id_pedido, p.data_pedido, p.status
+FROM Pedido p
+JOIN Cliente c ON p.id_cliente = c.id_cliente
+WHERE c.email = 'cliente@exemplo.com';
+Inserir um novo cliente:
+
+sql
+Copiar
+Editar
+INSERT INTO Cliente (nome, email, telefone, data_cadastro)
+VALUES ('Fernando Stofeles', 'fernando@example.com', '21999999999', CURDATE());
+Atualizar status do pedido:
+
+sql
+Copiar
+Editar
+UPDATE Pedido
+SET status = 'Pago'
+WHERE id_pedido = 1;
+8. Dicionário de Dados (Descrição das tabelas e campos)
+Tabela	Campo	Descrição
+Cliente	id_cliente	Identificador único do cliente
+nome	Nome completo do cliente
+email	Email do cliente (único)
+telefone	Telefone para contato
+data_cadastro	Data de cadastro do cliente
+--------------	----------------	-------------------------------------
+Jogo	id_jogo	Identificador único do jogo
+nome	Nome do jogo
+descricao	Descrição detalhada do jogo
+preco	Preço do jogo
+genero	Gênero do jogo
+data_lancamento	Data de lançamento do jogo
+--------------	----------------	-------------------------------------
+Pedido	id_pedido	Identificador único do pedido
+id_cliente	Identificador do cliente que fez o pedido
+data_pedido	Data e hora em que o pedido foi feito
+status	Status do pedido (ex: Pendente, Pago)
+--------------	----------------	-------------------------------------
+Item_Pedido	id_item	Identificador do item no pedido
+id_pedido	Referência ao pedido
+id_jogo	Referência ao jogo
+quantidade	Quantidade comprada
+preco_unitario	Preço unitário do jogo na compra
+--------------	----------------	-------------------------------------
+Pagamento	id_pagamento	Identificador do pagamento
+id_pedido	Referência ao pedido
+tipo_pagamento	Método utilizado para pagamento
+data_pagamento	Data do pagamento
+valor_pago	Valor pago
+
+9. Considerações sobre a Implementação
+Neste projeto, o foco principal foi a modelagem e implementação do banco de dados para a loja digital de vendas de jogos. O código SQL que define as tabelas, relacionamentos e restrições foi desenvolvido para criar a estrutura do banco de dados.
+
+Não foi desenvolvida uma interface gráfica (frontend) para este sistema, pois o objetivo da disciplina é aprofundar os conhecimentos em modelagem e manipulação de dados utilizando SQL.
+
+Portanto, o código SQL apresentado neste relatório está separado da interface visual e serve para demonstrar a criação e organização do banco de dados, além de possibilitar a execução das consultas e operações necessárias para o funcionamento do sistema.
+
+10. Referências
+SILBERSCHATZ, Abraham; KORTH, Henry F.; SUDARSHAN, S. Sistema de Banco de Dados. 6ª edição. Bookman, 2011.
+
+Documentação oficial do MySQL: https://dev.mysql.com/doc/
+
+Draw.io (https://app.diagrams.net) para modelagem do DER
+
+
+
