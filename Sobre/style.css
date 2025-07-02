@@ -1,0 +1,42 @@
+*{font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+header{
+    color: blue;
+    padding: 200px;
+    background-color: black;
+}
+h1{
+color: #32f964c7;
+text-align: center;
+font-size: 2.5em;
+}
+.sobre{
+ color: #32f964c7;
+line-height: 50px;
+padding: 50px;
+height: 79vh;
+box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.484);
+border: solid 1px black;
+background-color: rgb(0, 0, 0);
+ text-align: center;
+margin: auto;
+width: 90%;
+}
+.icone-sobre{
+    border-radius: 100%;
+    width: 10%;
+}
+.links,a{
+     color: #32f964c7;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 50px;
+}
+a:hover{
+ color: chartreuse;
+}
