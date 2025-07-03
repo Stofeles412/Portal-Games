@@ -40,7 +40,7 @@ nav{
 #Containe-cards{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(530px, 1fr)); 
      background-color: rgb(35, 35, 35);
 }
 #Containe-cards-2{
@@ -52,7 +52,7 @@ div{
     background-color: rgb(0, 0, 0);
     margin: 5px;
     padding: 40px;
-    width: 80%;
+   width: 80%;
     height: 200px;
     line-height: 50px;
      transition: transform 0.3s ease;
@@ -144,7 +144,7 @@ a:hover{
 
 }
 .card-6{
-    margin-top: 15%;
+       margin-top: 15%;
      width: 80%;
       background-image:url(../Imagens/Silent-Hill-f.avif) ;
     background-repeat: no-repeat;
@@ -153,7 +153,7 @@ a:hover{
 }
 .card-7{
      width: 80%;
-     margin-top: 15%;
+       margin-top: 15%;
     background-image:url(../Imagens/pragmata-gameplay-sortie-repoussee-image-listing.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;

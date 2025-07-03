@@ -2,68 +2,100 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Fernando Stofeles - Portal Gamer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards Estilo IGN</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #1e1e1e;
-      color: #f0f0f0;
+      background-color: #f3f3f3;
+      margin: 20px;
     }
 
-    header {
-      background-color: #111;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      color: #00ff99;
-    }
-
-    section {
-      padding: 40px 20px;
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
       max-width: 800px;
       margin: auto;
     }
 
-    .sobre-mim {
-      background-color: #2b2b2b;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
+    .card-link {
+      display: flex;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
 
-    .sobre-mim h2 {
-      color: #00ff99;
+    .card-link:hover {
+      transform: scale(1.01);
     }
 
-    footer {
-      background-color: #111;
-      padding: 20px;
-      text-align: center;
-      color: #777;
-      font-size: 14px;
+    .card-img {
+      width: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-title {
+      font-weight: bold;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    .card-subtitle {
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .card-link {
+        flex-direction: column;
+      }
+
+      .card-img {
+        width: 100%;
+        height: auto;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Portal Gamer</h1>
-    <p>Notícias, reviews e mais</p>
-  </header>
+  <div class="card-container">
+    <a href="#" class="card-link">
+      <img src="../Imagens/Silent-Hill-f.avif" alt="Imagem" class="card-img">
+      <div class="card-content">
+        <div class="card-title">Novo MMO da equipe do The Elder Scrolls Online</div>
+        <div class="card-subtitle">Cancelamento pegou a equipe de surpresa, diz fonte</div>
+      </div>
+    </a>
 
-  <section class="sobre-mim">
-    <h2>Sobre mim</h2>
-    <p>Me chamo Fernando Stofeles, sou apaixonado por games, tecnologia e tudo que envolve o mundo digital. Desde pequeno, sempre tive curiosidade por entender como as coisas funcionam, e hoje busco unir essa paixão com aprendizado constante. Gosto de explorar novidades do universo gamer e estou sempre ligado nas tendências tecnológicas. Seja jogando, programando ou pesquisando, estou sempre em busca de evoluir.</p>
-  </section>
+    <a href="#" class="card-link">
+      <img src="../Imagens/pragmata-gameplay-sortie-repoussee-image-listing.jpg" alt="Imagem" class="card-img">
+      <div class="card-content">
+        <div class="card-title">Hideo Kojima adicionou todos os easter eggs de Death Stranding 2</div>
+        <div class="card-subtitle">Ele mesmo criou os detalhes, segundo equipe</div>
+      </div>
+    </a>
 
-  <footer>
-    &copy; 2025 Fernando Stofeles. Todos os direitos reservados.
-  </footer>
+    <a href="#" class="card-link">
+      <img src="../Imagens/Resident_Evil_Requiem_Art.jpg" alt="Imagem" class="card-img">
+      <div class="card-content">
+        <div class="card-title">Geração Alfa quer jogar em qualquer lugar</div>
+        <div class="card-subtitle">Fidelidade a consoles está desaparecendo</div>
+      </div>
+    </a>
+  </div>
 
 </body>
 </html>
