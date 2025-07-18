@@ -186,7 +186,11 @@ a:hover{
     background-position: center center;
    background-size: cover;
 }
-
+.card-menor-h2{
+    font-size: 1.7em;
+    margin-bottom: 5%;
+ color: rgb(9, 202, 89);
+}
     .card-container {
       all: unset;
       margin-top: 30%;
