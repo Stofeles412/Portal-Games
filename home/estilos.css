@@ -313,7 +313,8 @@ footer {
     
 header{
     margin-bottom: 50%;
-    transform: translateX(-20%);
+    height: 150px;
+    transform: translateX(-0%);
     transition: transform 0.5s ease, opacity 0.5s ease;
   
 }
