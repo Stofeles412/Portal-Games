@@ -357,7 +357,8 @@ nav{
      background-color: rgb(35, 35, 35);
 }
 div{
-    width: 80%;
+    width: 50%;
+    margin: auto;
     height: 100px;
     line-height: 50px;
      transition: transform 0.3s ease;
@@ -394,7 +395,6 @@ div{
 }
 .card-6{
      margin-top: 80%;
-     width: 80%;
       background-image:url(../Imagens/Silent-Hill-f.avif) ;
     background-repeat: no-repeat;
     background-position: center center;
@@ -402,7 +402,6 @@ div{
 }
 .card-7{
     background-image:url(../Imagens/pragmata-gameplay-sortie-repoussee-image-listing.jpg) ;
-     width: 80%;
      margin-top: 80%;
     background-repeat: no-repeat;
     background-position: center center;
