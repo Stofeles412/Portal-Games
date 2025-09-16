@@ -32,10 +32,11 @@ nav{
 }
 .ul-li,a{
    color: rgb(9, 202, 89);
-   font-weight: bold;
+   font-weight: 400;
     text-decoration: none;
     list-style-type: none;
     margin: 50px;
+    
 }
 #Containe-cards{
     width: 100%;
