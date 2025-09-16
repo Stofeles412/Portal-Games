@@ -4,7 +4,7 @@ const menu = document.getElementById("abrir")
 if (menu.classList.contains("abrir")){
     menu.classList.remove ("abrir")
 }else{
-    menu.classList.add ("abrir")
+    menu.classList.add("abrir")
 }
 
 }
