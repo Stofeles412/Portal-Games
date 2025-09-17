@@ -188,6 +188,7 @@ a:hover{
    background-size: cover;
 }
 footer {
+    margin-top: 50%;
     color: #32f964c7;
     border-top: solid 1px rgb(11, 222, 15);
     background-color: #000;
