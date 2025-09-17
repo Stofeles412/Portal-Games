@@ -21,7 +21,11 @@ nav{
     margin-bottom: 10%;
 }
 .conteudo{
+<<<<<<< Updated upstream
   margin-bottom: 20%;
+=======
+  margin-bottom: 20% ;
+>>>>>>> Stashed changes
     width: 70%;
     padding: 50px;
     line-height: 40px;
@@ -66,7 +70,7 @@ iframe{
        display: flex;
       flex-direction: column;
       gap: 20px;
-      max-width: 600px;
+      max-width: 800px;
 }
   .card-link {
     width: 800px;
@@ -106,7 +110,11 @@ iframe{
       color: #555;
       font-size: 0.9rem;
     }
+<<<<<<< Updated upstream
 .roda-pe,.link-foot{
+=======
+.roda-pe,.foot-link{
+>>>>>>> Stashed changes
     border-top: solid 2px rgb(9, 202, 89);
     text-align: center;
     margin-top: 20%;

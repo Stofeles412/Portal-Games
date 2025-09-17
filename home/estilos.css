@@ -187,127 +187,84 @@ a:hover{
     background-position: center center;
    background-size: cover;
 }
-.card-menor-h2{
-    font-size: 1.7em;
-    margin-bottom: 5%;
- color: rgb(9, 202, 89);
-}
-    .card-container {
-      all: unset;
-      margin-top: 30%;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      max-width: 800px;
-  
-    }
-
-    .card-link {
-       all: unset;
-      display: flex;
-      background-color: white;
-      border-radius: 8px;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    .card-link:hover  {
-        transform: scale(1.01) ;
-  
-  
-    }
-
-    .card-img {
-         all: unset;
-      width: 200px;
-      object-fit: cover;
-    }
-
-    .card-content {
-       all: unset;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .card-title {
-       all: unset;
-      font-weight: bold;
-      margin-bottom: 8px;
-      font-size: 1.1rem;
-    }
-
-    .card-subtitle {
-      all: unset;
-      color: #555;
-      font-size: 0.9rem;
-    }
 footer {
     color: #32f964c7;
     border-top: solid 1px rgb(11, 222, 15);
-    background-color: rgb(0, 0, 0);
-    margin-top: 50%;
+    background-color: #000;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
+/* Título */
 .footer-h2 {
     font-size: 2.5em;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.sobre{
-    margin-top: 20%;
-    width: 40%;
-    line-height: 25px;
-    left: 5%;
-    top: 20%;
-    position: relative;
-    background-color: rgb(39, 39, 39);
-    color: chocolate;
-}
-.logo-footer{
-    font-size: 2em;
-    position: relative;
+/* Container principal */
+.footer-container {
     display: flex;
-    left: 2%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.footer-links{
-    background-color: rgb(0, 0, 0);
-    width: 60%;
-    text-align: left;
-    margin-top: 10%;
-    left: 25%;
+
+/* Coluna "sobre" */
+.sobre {
+    flex: 1 1 250px;
+    background-color: #272727;
+    color: chocolate;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.5;
 }
-.footer-links-2{
-     border-bottom: 1px solid white;
-      background-color: rgb(0, 0, 0);
-    text-align: left;
-    margin-top: 5%;
-    left: 25%;
+
+/* Logo */
+.logo-footer {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
 }
-.footer-links-txt{
-    width: 40%;
-    background-color: rgb(0, 0, 0);
-    margin-left: 60%;
-    margin-top: 1%;
-    display: block;
-   
+
+/* Links */
+.footer-links, 
+.footer-links-2 {
+    flex: 1 1 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.footer-links-icones{
-     border-bottom: 1px solid white;
-      background-color: rgb(0, 0, 0);
-    text-align: right;
-    left: 10%;
-    margin-top: 10%;
+
+.footer-links-2 {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
 }
-.footer-copy{
+
+/* Texto e ícones */
+.footer-links-txt {
+    flex: 1 1 200px;
+    color: white;
+}
+
+.footer-links-icones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+/* Copyright */
+.footer-copy {
     text-align: center;
     color: aliceblue;
-    background-color: black;
-    margin-top: 10%;
+    font-size: 0.9em;
+    padding-top: 20px;
+    border-top: 1px solid #222;
 }
 
 @media screen and (max-width: 1000px){
@@ -338,15 +295,17 @@ nav{
     
 }
 .abrir{
-  opacity: 1;
-  transform: translateX(-110%);
+  opacity: 0;
+ transform: translateX(-110%);
   transform-origin: right;
   transition: .5s;
+ 
 }
 #itens-ul{
      top: 50%;
-      transition: transform 0.5s ease, opacity 0.5s ease;
-    display: block;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  display: block;
+ 
 }
 .ul-li,a{
     margin: 15px;
@@ -396,13 +355,11 @@ div{
 }
 .card-6{
      margin-top: 80%;
-      background-image:url(../Imagens/Silent-Hill-f.avif) ;
     background-repeat: no-repeat;
     background-position: center center;
    background-size: cover;
 }
 .card-7{
-    background-image:url(../Imagens/pragmata-gameplay-sortie-repoussee-image-listing.jpg) ;
      margin-top: 80%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -411,7 +368,6 @@ div{
 .card-8{
      margin-top: 80%;
     width: 50%;
-    background-image:url(../Imagens/pragmata-gameplay-sortie-repoussee-image-listing.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;
    background-size: cover;
@@ -420,7 +376,6 @@ div{
 .card-9{
      margin-top: 80%;
      width: 40%;
-    background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;
    background-size: cover;
@@ -428,7 +383,6 @@ div{
 .card-10{
      margin-top: 80%;
      width: 40%;
-    background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;
    background-size: cover;
@@ -436,7 +390,6 @@ div{
 .card-11{
      margin-top: 80%;
      width: 40%;
-    background-image:url(../Imagens/Resident_Evil_Requiem_Art.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;
    background-size: cover;
