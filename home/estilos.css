@@ -333,6 +333,8 @@ nav{
 }
 #botao-menu{
     display: block;
+    border: 0px;
+    background-color: transparent;
 }
 .abrir{
   opacity: 1;
