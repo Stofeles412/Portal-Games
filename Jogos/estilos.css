@@ -21,6 +21,7 @@ nav{
     margin-bottom: 10%;
 }
 .conteudo{
+  margin-bottom: 20%;
     width: 70%;
     padding: 50px;
     line-height: 40px;
@@ -68,6 +69,7 @@ iframe{
       max-width: 600px;
 }
   .card-link {
+    width: 800px;
       display: flex;
     background-color: rgb(255, 255, 255);
       border-radius: 8px;
@@ -104,7 +106,7 @@ iframe{
       color: #555;
       font-size: 0.9rem;
     }
-.roda-pe,a{
+.roda-pe,.link-foot{
     border-top: solid 2px rgb(9, 202, 89);
     text-align: center;
     margin-top: 20%;
