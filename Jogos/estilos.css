@@ -25,28 +25,8 @@ nav{
     margin-bottom: 10%;
 }
 .conteudo{
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   margin-left: 5%;
     margin-bottom: 20%;
-=======
-  margin-bottom: 20% ;
->>>>>>> Stashed changes
-=======
-  margin-bottom: 20% ;
->>>>>>> Stashed changes
-=======
-  margin-bottom: 20% ;
->>>>>>> Stashed changes
-=======
-  margin-bottom: 20% ;
->>>>>>> Stashed changes
-=======
-  margin-bottom: 20% ;
->>>>>>> Stashed changes
     width: 70%;
     padding: 50px;
     line-height: 2.1;
@@ -88,35 +68,19 @@ iframe{
     position: relative;
 }
 .containe-cards{
-<<<<<<< Updated upstream
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 800px;
-=======
        display: flex;
       flex-direction: column;
       gap: 20px;
       max-width: 800px;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
 .card-link {
     width: 800px;
     display: flex;
     background-color: rgb(255, 255, 255);
-<<<<<<< Updated upstream
     border-radius: 8px;
     overflow: hidden;
     text-decoration: none;
@@ -147,7 +111,6 @@ iframe{
     font-size: 0.9rem;
 }
 .roda-pe, .foot-link {
-=======
       border-radius: 8px;
       overflow: hidden;
       text-decoration: none;
@@ -183,19 +146,6 @@ iframe{
       font-size: 0.9rem;
     }
 .roda-pe,.foot-link{
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     border-top: solid 2px rgb(9, 202, 89);
     text-align: center;
     margin-top: 20%;
