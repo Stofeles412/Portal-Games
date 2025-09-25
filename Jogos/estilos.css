@@ -1,41 +1,35 @@
-*{  font-family: Arial, Helvetica, sans-serif;
+*{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 }
 body{
     overflow-x: hidden;
-    background-color: rgb(31, 30, 30);
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(69, 70, 69));
 }
 nav{
     width: 100%;
     padding: 100px;
     margin-bottom: -7%;
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(46, 45, 45);
 }
 .titulo{
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.637);
-   color: rgb(9, 202, 89);
+    color: rgb(9, 202, 89);
     line-height: 70px;
-  text-align: center;
+    text-align: center;
     font-size: 3em;
     margin-bottom: 10%;
 }
 .conteudo{
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  margin-bottom: 20%;
-=======
-  margin-bottom: 20% ;
->>>>>>> Stashed changes
-=======
-  margin-bottom: 20% ;
->>>>>>> Stashed changes
+  margin-left: 5%;
+    margin-bottom: 20%;
     width: 70%;
     padding: 50px;
-    line-height: 40px;
+    line-height: 2.1;
     border: solid 1px black;
     color: rgb(255, 255, 255);
-     background-color: rgb(31, 30, 30);
+   background-color: rgb(31, 30, 30);
 }
 .marca-txt{
     color: rgb(9, 202, 89);
@@ -44,17 +38,17 @@ nav{
 .legenda{
     margin-bottom: 50px;
     font-weight: 200;
-   color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 .div-imagens{
     position: relative;
     width: 70%;
 }
 .imagens{
-     transition: transform 0.5s ease;
-      cursor: zoom-in;
-   border-radius: 10px;
-       width: 70%;
+    transition: transform 0.5s ease;
+    cursor: zoom-in;
+    border-radius: 10px;
+    width: 70%;
 }
 .zoom{
     width: 100%;
@@ -71,81 +65,68 @@ iframe{
     position: relative;
 }
 .containe-cards{
-       display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
 }
-  .card-link {
+.card-link {
     width: 800px;
-      display: flex;
+    display: flex;
     background-color: rgb(255, 255, 255);
-      border-radius: 8px;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    .card-link:hover {
-      transform: scale(1.01);
-    }
-
-    .card-img {
-      width: 200px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .card-title {
-      font-weight: bold;
-      margin-bottom: 8px;
-      font-size: 1.1rem;
-    }
-
-    .card-subtitle {
-      color: #555;
-      font-size: 0.9rem;
-    }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-.roda-pe,.link-foot{
-=======
-.roda-pe,.foot-link{
->>>>>>> Stashed changes
-=======
-.roda-pe,.foot-link{
->>>>>>> Stashed changes
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.card-link:hover {
+    transform: scale(1.01);
+}
+.card-img {
+    width: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+.card-subtitle {
+    color: #555;
+    font-size: 0.9rem;
+}
+.roda-pe, .foot-link {
     border-top: solid 2px rgb(9, 202, 89);
     text-align: center;
     margin-top: 20%;
     background-color: rgb(57, 57, 57);
-     color: rgb(9, 202, 89);
+    color: rgb(9, 202, 89);
     list-style-type: none;
     text-decoration: none;
     padding: 50px;
 }
 @media screen and (max-width: 630px){
-.div-imagens{
-    width: 100%;
-}
-iframe{
-    left: 3%;
-    margin-top: 15%;
-    width: 90%;
-    height: 200px;
-    margin-bottom: 10%;
-}
-.roda-pe,a{
-    text-align: center;
-    margin-top: 20%;
-    padding: 15px;
-}
+    .div-imagens{
+        width: 100%;
+    }
+    iframe{
+        left: 3%;
+        margin-top: 15%;
+        width: 90%;
+        height: 200px;
+        margin-bottom: 10%;
+    }
+    .roda-pe, a{
+        text-align: center;
+        margin-top: 20%;
+        padding: 15px;
+    }
 }
